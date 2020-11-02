@@ -1,12 +1,26 @@
-# Restaurant Reviews Classification
+# Association Rule Mining
 
 ## Summary
 
-This project is using pre-trained BERT to classify reviews of restaurant.
+This project analyze association rule by using Apriori algorithm.
 
 The data can be downloaded at https://www.kaggle.com/heeraldedhia/groceries-dataset
 
-## Results:
+## Data Overview
+
+| Member_number | Date       | itemDescription  |
+|---------------|------------|------------------|
+| 1808          | 21-07-2015 | tropical fruit   |
+| 2552          | 5/1/2015   | whole milk       |
+| 2300          | 19-09-2015 | pip fruit        |
+| 1187          | 12/12/2015 | other vegetables |
+| 3037          | 1/2/2015   | whole milk       |
+
+### Top 10 sold products
+
+![image](https://github.com/samueljsluo/MarketBasketAnalysis/blob/main/data/top10.png)
+
+## Results
 	
 Rule :  specialty chocolate  -> frozen fish
 
