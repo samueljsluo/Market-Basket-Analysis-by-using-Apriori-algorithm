@@ -1,10 +1,12 @@
 # Restaurant Reviews Classification
 
+## Summary
+
 This project is using pre-trained BERT to classify reviews of restaurant.
 
 The data can be downloaded at https://www.kaggle.com/heeraldedhia/groceries-dataset
 
-Results:
+## Results:
 	
 Rule :  specialty chocolate  -> frozen fish
 
@@ -15,6 +17,7 @@ Confidence :  0.049019607843137254
 Lift :  3.0689556157190907
 
 =====================================
+
 Rule :  fruit/vegetable juice  -> liver loaf
 
 Support :  0.00040098910646260775
