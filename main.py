@@ -10,14 +10,10 @@ dataset = pd.read_csv("data/Groceries_dataset.csv")
 print(f'Null Values: \n{dataset.isnull().sum()}\n')
 print(f'Nan Values: \n{dataset.isna().sum()}\n')
 
-# chart = px.bar(dataset["itemDescription"].value_counts()[:30], orientation='v',
-#                color=dataset['itemDescription'].value_counts()[:30], title='Item by count', labels={'value':'Count',
+# chart = px.bar(dataset["itemDescription"].value_counts()[:10], orientation='v',
+#                color=dataset['itemDescription'].value_counts()[:10], title='Item by count', labels={'value':'Count',
 #                                                                                                     'index':'Item'})
 # chart.show()
-# all_product = dataset['itemDescription'].unique()
-# one_hot = pd.get_dummies(dataset['itemDescription'])
-# dataset.drop('itemDescription', inplace=True, axis=1)
-# dataset = dataset.join(one_hot)
 transaction = dataset.groupby(['Member_number','Date'])['itemDescription'].apply(','.join).reset_index()
 transaction['itemDescription'] = transaction['itemDescription'].str.split(',')
 association_rules = apriori(list(transaction.itemDescription), min_support=0.00030, min_confidance=0.05, min_lift=3,
