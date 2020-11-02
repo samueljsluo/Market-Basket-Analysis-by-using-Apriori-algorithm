@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.offline as py
 from plotly.offline import plot
-from
-
 
 dataset = pd.read_csv("data/Groceries_dataset.csv")
 
